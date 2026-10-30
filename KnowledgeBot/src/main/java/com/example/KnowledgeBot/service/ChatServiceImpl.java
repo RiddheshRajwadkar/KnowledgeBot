@@ -3,7 +3,6 @@ package com.example.KnowledgeBot.service;
 import com.example.KnowledgeBot.dto.ChatRequest;
 import org.springframework.ai.chat.client.ChatClient;
 //import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
-import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.stereotype.Service;
 
