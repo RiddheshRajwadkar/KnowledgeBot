@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/v1/")
 public class ChatController {
@@ -21,7 +23,7 @@ public class ChatController {
 
     @PostMapping("/chat")
     public ResponseEntity<ChatResponse> chat(@RequestBody ChatRequest chatRequest){
-        String message = chatService.generateResponse(chatRequest);
-        return ResponseEntity.ok(new ChatResponse(message));
+        ChatResponse message = chatService.generateResponse(chatRequest);
+        return ResponseEntity.ok(message);
     }
 }

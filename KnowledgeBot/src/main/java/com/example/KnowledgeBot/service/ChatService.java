@@ -1,8 +1,9 @@
 package com.example.KnowledgeBot.service;
 
 import com.example.KnowledgeBot.dto.ChatRequest;
+import com.example.KnowledgeBot.dto.ChatResponse;
 
 
 public interface ChatService {
-    String generateResponse(ChatRequest chatRequest);
+ChatResponse generateResponse(ChatRequest chatRequest);
 }
