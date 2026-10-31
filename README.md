@@ -52,30 +52,10 @@ To provide blazingly fast inference with zero subscription costs, KnowledgeBot u
 ## 🚀 Getting Started
 ### 1. Set Up Local Ollama Embedding Model
 Open a terminal and pull the embedding model:
+```
+ollama pull nomic-embed-text
+```
 
-  "message": "What are the ingestion best practices?"
-}
-```
-**Response Body:**
-```json
-{
-  "message": "Based on the provided Project Knowledge Base for KnowledgeBot, the ingestion best practices are:\n\n*   **Validate Input:** Always validate incoming files for appropriate MIME types and file size limits before processing.\n*   **Error Handling:** Handle exceptions gracefully, ensuring that failed file uploads return descriptive HTTP status codes and error messages.\n*   **Chunk Configuration:** Configure chunk overlap settings appropriately to prevent information loss at the boundaries of text splits.",
-  "sources": [
-    {
-      "id": "748360f8-51c5-4e47-a295-4f6f8c0200bb",
-      "metadata": {
-        "charset": "UTF-8",
-        "chunk_index": 0,
-        "source": "Testing Document.txt",
-        "distance": 0.5418004567025723,
-        "total_chunks": 1
-      },
-      "score": 0.45819954329742774,
-      "text": "Project Knowledge Base Overview\n\nIngestion Best Practices\n- Always validate incoming files for appropriate MIME types and file size limits..."
-    }
-  ]
-}
-```
 ---
 ## 📂 Project Structure
 ```
